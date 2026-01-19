@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* share style */
+.display-flex {
+    display: flex;
+}
+
+.gradient-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* color code from pixso and linear tutorial from internet */
+    background: linear-gradient(90deg,
+            rgba(247, 233, 63, 1) 0%,
+            rgba(251, 9, 180, 1) 50%,
+            rgba(145, 0, 248, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    background: linear-gradient(90deg,
+            rgba(247, 233, 63, 1) 0%,
+            rgba(251, 9, 180, 1) 50%,
+            rgba(145, 0, 248, 1) 100%);
+    color: white;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border-style: none;
+    border-radius: 1000px;
+    padding: 12px 16px;
+}
+
+
+
+/* main style */
+
+/* navbar related style */
+.nav-bar {
+    max-width: 1200px;
+    padding: 16px 20px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #412567;
+}
+
+.menu-links ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.714);
+    font-weight: 500;
+
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+}
+
+.hamburger-menu {
+    display: none;
+    color: white;
+    width: 24px;
+    height: 24px;
+   
+}
+
+
+/* responsive for mobile device */
+@media screen and (max-width:576px) {
+
+    .menu-links ul,
+    .btn {
+        display: none;
+    }
+    .hamburger-menu {
+    display: inline;
+}
+}
