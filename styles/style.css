@@ -96,6 +96,17 @@
     height: 24px;
 }
 
+/* animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.mic, .circle {
+    animation: float 4s ease-in-out infinite;
+}
+
 /* ABOUT SECTION STYLE */
 #About-container {
     background-color: #1A0B2E;
